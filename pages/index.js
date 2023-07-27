@@ -9,7 +9,7 @@ const Home = ({ movies }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3030/movies");
+  const res = await fetch("https://balu-movies-api.vercel.app/movies");
   const data = await res.json()
   const limitData = data.slice(0, 9)
 

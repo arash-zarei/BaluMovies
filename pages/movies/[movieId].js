@@ -19,7 +19,7 @@ const MovieDetails = ({ movie }) => {
 export default MovieDetails;
 
 export async function getStaticPaths (){
-    const res = await fetch("http://localhost:3030/movies");
+    const res = await fetch("https://balu-movies-api.vercel.app/movies");
     const data = await res.json()
     const limitData = data.slice(0, 15)
     const paths = limitData.map(item => ({
@@ -34,7 +34,7 @@ export async function getStaticPaths (){
 
 export async function getStaticProps(context) {
     const { params: { movieId } } = context;
-    const res = await fetch(`http://localhost:3030/movies/${movieId}`);
+    const res = await fetch(`https://balu-movies-api.vercel.app/movies/${movieId}`);
     const data = await res.json();
 
     return {

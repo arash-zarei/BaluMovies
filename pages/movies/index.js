@@ -8,7 +8,7 @@ const index = ({ movies }) => {
 export default index;
 
 export async function getStaticProps() {
-    const res = await fetch("http://localhost:3030/movies");
+    const res = await fetch("https://balu-movies-api.vercel.app/movies");
     const data = await res.json()
   
     return {
