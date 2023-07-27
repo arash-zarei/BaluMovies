@@ -3,23 +3,22 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Mikhak;
-    src: url('/font/Mikhak.ttf');
+  font-family: Mikhak;
+  src: url("/font/Mikhak.ttf");
 }
 
 html,
-body{
+body {
   direction: rtl;
 }
 
 @layer base {
-
-    *{
-        @apply font-primary
-    }
-    body{
-      @apply bg-black
-    }
+  * {
+    @apply font-primary;
+  }
+  body {
+    @apply bg-black;
+  }
 
   .h1 {
     @apply text-[38px] tracking-[10%];
@@ -31,4 +30,11 @@ body{
     @apply text-[26px] leading-[46px];
   }
 
+  .btnSpan{
+    @apply p-2 bg-gray-700 rounded-md text-primary hover:text-yellow-400 cursor-pointer
+  }
+
+  .listLi{
+    @apply flex gap-2 py-2 cursor-pointer text-white hover:text-yellow-400
+  }
 }

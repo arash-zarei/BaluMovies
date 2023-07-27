@@ -11,9 +11,9 @@ const Header = ({ navbarHandler }) => {
         <Unicons.UilBars />
       </span>
       <ul className="flex items-center justify-around gap-9">
-        <li className="hover:text-yellow-400 text-white">تلوزیون</li>
-        <li className="text-primary border-b-2 border-primary">فیلم ها</li>
-        <li className="hover:text-yellow-400 text-white">انیمه</li>
+        <li className="hover:text-yellow-400 text-white cursor-pointer">تلوزیون</li>
+        <li className="text-primary border-b-2 cursor-pointer border-primary">فیلم ها</li>
+        <li className="hover:text-yellow-400 text-white cursor-pointer">انیمه</li>
       </ul>
     <Link href="/categories" className="btnSpan">
     <Unicons.UilFilter />
