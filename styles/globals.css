@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Mikhak;
+    src: url('/font/Mikhak.ttf');
+}
+
+html,
+body{
+  direction: rtl;
+}
+
+@layer base {
+
+    *{
+        @apply font-primary
+    }
+    body{
+      @apply bg-black
+    }
+
+  .h1 {
+    @apply text-[38px] tracking-[10%];
+  }
+  .h2 {
+    @apply text-[32px] tracking-[10%];
+  }
+  .h3 {
+    @apply text-[26px] leading-[46px];
+  }
+
+}
