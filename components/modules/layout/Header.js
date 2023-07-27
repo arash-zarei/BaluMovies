@@ -6,7 +6,7 @@ import * as Unicons from "@iconscout/react-unicons";
 
 const Header = ({ navbarHandler }) => {
   return (
-    <div className="w-full flex items-center justify-between p-4 bg-black">
+    <div className="w-full flex items-center justify-between p-4 bg-black sticky top-0 z-20">
       <span onClick={() => navbarHandler()} className="btnSpan xl:hidden">
         <Unicons.UilBars />
       </span>

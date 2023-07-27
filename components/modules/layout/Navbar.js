@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // Icons
 import * as Unicons from "@iconscout/react-unicons";
@@ -7,12 +8,12 @@ const Navbar = ({ navbarHandler }) => {
   return (
     <div className="w-full bg-black">
         {/* heder Navbar */}
-      <div className="flex justify-between items-center px-4">
-        <h1 className="h3 text-white p-4">
+      <div className="flex justify-between items-center px-4 bg-black xl:sticky xl:top-0 static">
+        <Link href="/" className="h3 text-white p-4">
           <span className="text-primary">بالو</span>مووی
           <br />
           <span className="text-primary">Balu</span>Movie
-        </h1>
+        </Link>
         <span onClick={() => navbarHandler()} className="btnSpan xl:hidden">
           <Unicons.UilMultiply />
         </span>
