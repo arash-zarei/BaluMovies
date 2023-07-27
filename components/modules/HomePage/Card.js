@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 // Icons
 import * as Unicons from "@iconscout/react-unicons";
@@ -24,9 +25,9 @@ const Card = ({ data }) => {
             </div>
           </div>
           <div className="w-full flex justify-between items-center gap-2">
-            <button className="w-full py-1 bg-primary hover:bg-yellow-400 text-black text-center rounded-md">
+            <Link href={`movies/${id}`} className="w-full py-1 bg-primary hover:bg-yellow-400 text-black text-center rounded-md">
               تماشا
-            </button>
+            </Link>
             <span className="p-1 rounded-md bg-gray-600 cursor-pointer">
               <Unicons.UilPlus />
             </span>
