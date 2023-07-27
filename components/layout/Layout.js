@@ -20,15 +20,19 @@ const Layout = ({ children }) => {
       {/* end bgNavbar */}
 
         {/* navbar */}
+
       <div className={`absolute w-[100%] z-40 ${isOpen ? "right-0 max-xl:max-h-screen max-xl:overflow-y-auto" : "right-[-100%]" } transition-all sm:w-[70%] md:w-[50%] xl:w-[20%] xl:static bg-black`}>
         <Navbar navbarHandler={navbarHandler} />
       </div>
+
       {/* end navbar */}
 
+    {/* pages */}
       <div className={`w-[100%] xl:w-[80%] min-h-screen ${isOpen ? "max-xl:max-h-screen max-xl:overflow-hidden" : ""} bg-black`}>
         <Header navbarHandler={navbarHandler} />
         {children}
       </div>
+      {/* end pages */}
     </div>
   );
 };
