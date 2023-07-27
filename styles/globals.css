@@ -37,4 +37,17 @@ body {
   .listLi{
     @apply flex gap-2 py-2 cursor-pointer text-white hover:text-yellow-400
   }
+
+  .dotesSlider{
+    @apply w-2 h-2 mt-2 rounded-full bg-white
+  }
+
+  .sliderBtn{
+    @apply w-8 h-8 sm:w-11 sm:h-11 flex items-center justify-center text-primary hover:text-yellow-400 bg-dark opacity-70 hover:opacity-100 rounded-xl cursor-pointer z-10
+  }
+
+  .imgSlider{
+    @apply w-full rounded-2xl
+  }
+
 }

@@ -1,13 +1,9 @@
-// Icons
-import * as Unicons from "@iconscout/react-unicons";
+// Componets
+import HomePage from "../components/templates/HomePage";
 
 
 const Home = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <HomePage />
 }
 
 export default Home;
