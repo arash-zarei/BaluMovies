@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
     <div className="flex max-w-6xl mx-auto relative">
       {/* bgNavbar */}
 
-      {isOpen && <div className="hidden sm:block absolute w-full h-screen blur-sm opacity-70 z-30 bg-gray-400"></div>}
+      {isOpen && <div className="hidden sm:block absolute w-full h-screen blur-sm opacity-70 z-30 bg-gray-800"></div>}
       
       {/* end bgNavbar */}
 
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       </div>
       {/* end navbar */}
 
-      <div className={`w-[100%] xl:w-[80%] h-[300vh] ${isOpen ? "max-h-screen" : ""} bg-yellow-400`}>
+      <div className={`w-[100%] xl:w-[80%] min-h-screen ${isOpen ? "max-xl:max-h-screen max-xl:overflow-hidden" : ""} bg-black`}>
         <Header navbarHandler={navbarHandler} />
         {children}
       </div>
