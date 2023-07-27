@@ -54,4 +54,8 @@ body {
     @apply flex flex-col justify-between absolute w-full h-full top-0 right-0 p-2 transition-all rounded-xl opacity-100 bg-black bg-opacity-60 md:opacity-0 md:hover:bg-opacity-70 md:hover:opacity-100
   }
 
+  .listDatils{
+    @apply text-sm cursor-default items-center gap-2
+  }
+
 }

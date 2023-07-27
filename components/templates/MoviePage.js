@@ -30,25 +30,25 @@ const MoviePage = ({ data }) => {
         <div>
           <p className="text-xl text-white">{fullname}</p>
           <ul className="mt-7">
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilSmile /> <span className="text-primary">ژانر :</span> {genre}
             </li>
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilStar /> <span className="text-primary">امتیاز :</span> {score} <img src="/images/imdb.png" alt="imdb" className="w-7" />
             </li>
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilClock /> <span className="text-primary">زمان :</span> {time} دقیقه 
             </li>
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilCalender /> <span className="text-primary">سال انتشار :</span> {yearOfPublication}
             </li>
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilFootball /> <span className="text-primary">محصول کشور :</span> {country}
             </li>
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilUser /> <span className="text-primary">کارگردان :</span> {director}
             </li>
-            <li className="listLi text-sm cursor-default items-center gap-2">
+            <li className="listLi listDatils">
               <Unicons.UilUsersAlt /> <span className="text-primary">بازیگران :</span> {actors}
             </li>
           </ul>
