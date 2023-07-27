@@ -1,16 +1,24 @@
+import { useRouter } from 'next/router';
 import React from 'react';
 
+// Components
+import MoviePage from '../../components/templates/MoviePage';
+import Loading from '../../components/modules/MoviePage/Loading';
+
 const MovieDetails = ({ movie }) => {
-    return (
-        <div>
-            
-        </div>
-    );
+
+    const params = useRouter()
+
+    if(params.isFallback) {
+        return <Loading />
+    }
+
+    return <MoviePage data={movie} />
 };
 
 export default MovieDetails;
 
-export async function getStaticpaths(){
+export async function getStaticPaths (){
     const res = await fetch("http://localhost:3030/movies");
     const data = await res.json()
     const limitData = data.slice(0, 15)
