@@ -9,7 +9,7 @@ const Navbar = ({ navbarHandler }) => {
         {/* heder Navbar */}
       <div className="flex justify-between items-center px-4">
         <h1 className="h3 text-white p-4">
-          <span className="text-primary">بالو</span>موی
+          <span className="text-primary">بالو</span>مووی
           <br />
           <span className="text-primary">Balu</span>Movie
         </h1>
