@@ -6,7 +6,7 @@ import * as Unicons from "@iconscout/react-unicons";
 
 const Card = ({ data }) => {
 
-  const {  en_name, fa_name, genre, score, id } = data
+  const {  en_name, fa_name, genre, year_score, id } = data
 
   return (
     <div className="rounded-xl mt-8 relative text-white w-fit">
@@ -21,7 +21,7 @@ const Card = ({ data }) => {
             <p>{genre}</p>
             <div className="flex items-center gap-1">
               <img src="/images/imdb.png" alt="imdb" className="w-7" />
-              <p>{score}</p>
+              <p>{year_score[0].score}</p>
             </div>
           </div>
           <div className="w-full flex justify-between items-center gap-2">
