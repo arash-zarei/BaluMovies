@@ -5,8 +5,10 @@
       "en_name": "Hammer",
       "fa_name": "چکش",
       "genre": "درام - زندگی نامه",
-      "score": "7.1",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "7.1"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Jeff Beesley",
       "actors": "Melissa Peterman, Reba McEntire, Rex Linn",
@@ -20,8 +22,10 @@
       "en_name": "Channel",
       "fa_name": "کانال",
       "genre": "اکشن - هیجان انگیز",
-      "score": "5.8",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "5.8"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "William Kaufman",
       "actors": "Clayne Crawford, Max Martini, Michael Thomas",
@@ -35,8 +39,10 @@
       "en_name": "They Cloned Tyrone",
       "fa_name": "تایرون را شبیه سازی کردند",
       "genre": "اکشن - کمدی",
-      "score": "6.7",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "6.7"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Juel Taylor",
       "actors": "Kiefer Sutherland, Jamie Foxx, John Boyega",
@@ -50,8 +56,10 @@
       "en_name": "Barbie",
       "fa_name": "باربی",
       "genre": "کمدی - ماجراجویی",
-      "score": "7.6",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "7.6"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Greta Gerwig",
       "actors": "Margot Robbie, Ariana Greenblatt, Kingsley Ben-Adir",
@@ -65,8 +73,10 @@
       "en_name": "Oppenheimer",
       "fa_name": "اوپنهایمر",
       "genre": "تاریخی - درام",
-      "score": "8.8",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "8.8"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Christopher Nolan",
       "actors": "Cillian Murphy, Emily Blunt, Matt Damon",
@@ -80,8 +90,10 @@
       "en_name": "God Is a Bullet",
       "fa_name": "گلوله خدا",
       "genre": "ترسناک - جنایی",
-      "score": "6.0",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "6.0"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Nick Cassavetes",
       "actors": "Maika Monroe, Nikolaj Coster-Waldau, Jamie Foxx",
@@ -95,8 +107,10 @@
       "en_name": "Tenet",
       "fa_name": "انگاشته",
       "genre": "اکشن - علمی تخیلی",
-      "score": "7.3",
-      "yearOfPublication": "2020",
+      "year_score": [
+        {"score": "7.3"},
+        {"year": "2020"}
+      ],
       "country": "انگلستان",
       "director": "Christopher Nolan",
       "actors": "Andrew Howard، Clémence Poésy، Denzil Smith",
@@ -110,8 +124,10 @@
       "en_name": "Inception",
       "fa_name": "تلقین",
       "genre": "اکشن - علمی تخیلی",
-      "score": "8.8",
-      "yearOfPublication": "2010",
+      "year_score": [
+        {"score": "8.8"},
+        {"year": "2010"}
+      ],
       "country": "انگلستان",
       "director": "Christopher Nolan",
       "actors": "Cillian Murphy، Claire Geare، Dileep Rao",
@@ -125,8 +141,10 @@
       "en_name": "Interstellar",
       "fa_name": "میان ستاره ای ",
       "genre": "درام - علمی تخیلی",
-      "score": "8.6",
-      "yearOfPublication": "2014",
+      "year_score": [
+        {"score": "8.6"},
+        {"year": "2014"}
+      ],
       "country": "کانادا",
       "director": "Christopher Nolan",
       "actors": "Andrew Borba، Anne Hathaway، Bill Irwin",
@@ -140,8 +158,10 @@
       "en_name": "Dunkirk",
       "fa_name": "دانکرک",
       "genre": "اکشن - تاریخی",
-      "score": "7.8",
-      "yearOfPublication": "2017",
+      "year_score": [
+        {"score": "7.8"},
+        {"year": "2017"}
+      ],
       "country": "فرانسه",
       "director": "Christopher Nolan",
       "actors": "Aneurin Barnard، Barry Keoghan، Billy Howle",
@@ -155,8 +175,10 @@
       "en_name": "Mission Impossible 7",
       "fa_name": "ماموریت غیر ممکن 7",
       "genre": "اکشن - ماجراجویی",
-      "score": "8.1",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "8.1"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Christopher McQuarrie",
       "actors": "Cary Elwes، Charles Parnell، Esai Morales",
@@ -170,8 +192,10 @@
       "en_name": "Yaathisai",
       "fa_name": "یاتیسای",
       "genre": "اکشن - تاریخی",
-      "score": "7.9",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "7.9"},
+        {"year": "2023"}
+      ],
       "country": "هند",
       "director": "Dharani Rajendran",
       "actors": "Guru Somasundaram، Seyon Purushothaman، Subathra",
@@ -185,8 +209,10 @@
       "en_name": "The Flash",
       "fa_name": "فلش",
       "genre": "اکشن - فانتزی",
-      "score": "8.7",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "8.7"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Andy Muschietti",
       "actors": "Antje Traue، Ben Affleck، Eric Tiede",
@@ -200,8 +226,10 @@
       "en_name": "Hypnotic",
       "fa_name": "هیپنوتیزم شده",
       "genre": "اکشن - راز آلود",
-      "score": "5.6",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "5.6"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Robert Rodriguez",
       "actors": "Alice Braga، Ben Affleck، Bonnie Discepolo",
@@ -215,8 +243,10 @@
       "en_name": "The Last Duel",
       "fa_name": "آخرین دوئل",
       "genre": "اکشن - تاریخی",
-      "score": "7.4",
-      "yearOfPublication": "2021",
+      "year_score": [
+        {"score": "7.4"},
+        {"year": "2021"}
+      ],
       "country": "انگلستان",
       "director": "Ridley Scott",
       "actors": "Adam Driver، Adam Goodwin، Alex Lawther",
@@ -230,8 +260,10 @@
       "en_name": "Spider-Man: No Way Home",
       "fa_name": "مرد عنکبوتی راهی به خانه نیست",
       "genre": "اکشن - فانتزی",
-      "score": "8.3",
-      "yearOfPublication": "2021",
+      "year_score": [
+        {"score": "8.3"},
+        {"year": "2021"}
+      ],
       "country": "آمریکا",
       "director": "Jon Watts",
       "actors": "Alfred Molina، Andrew Garfield، Angourie Rice",
@@ -245,8 +277,10 @@
       "en_name": "Thor: Love and Thunder",
       "fa_name": "ثور 4 عشق و تندر",
       "genre": "اکشن - فانتزی",
-      "score": "7.8",
-      "yearOfPublication": "2022",
+      "year_score": [
+        {"score": "7.8"},
+        {"year": "2022"}
+      ],
       "country": "استرالیا",
       "director": "Taika Waititi",
       "actors": "Bradley Cooper، Chris Hemsworth، Chris Pratt",
@@ -260,8 +294,10 @@
       "en_name": "Ant-Man and the Wasp: Quantumania",
       "fa_name": "مرد مورچه ای و زنبورک کوانتومانیا",
       "genre": "اکشن - ماجراجویی ",
-      "score": "6.4",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "6.4"},
+        {"year": "2023"}
+      ],
       "country": "استرالیا",
       "director": "Peyton Reed",
       "actors": "Bill Murray، David Dastmalchian، Durassie Kiangangu",
@@ -275,8 +311,10 @@
       "en_name": "Black Panther",
       "fa_name": "پلنگ سیاه 2 واکاندا برای همیشه",
       "genre": "اکشن - درام ",
-      "score": "7.2",
-      "yearOfPublication": "2022",
+      "year_score": [
+        {"score": "7.2"},
+        {"year": "2022"}
+      ],
       "country": "آمریکا",
       "director": "Ryan Coogler",
       "actors": "Alex Livinalli، Angela Bassett، Connie Chiume",
@@ -290,8 +328,10 @@
       "en_name": "Fast X",
       "fa_name": "فست ایکس (سریع و خشن 10)",
       "genre": "اکشن - جنایی ",
-      "score": "7.7",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "7.7"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Louis Leterrier",
       "actors": "Alan Ritchson، Brie Larson، Cardi B",
@@ -305,8 +345,10 @@
       "en_name": "Extraction 2",
       "fa_name": "استخراج 2",
       "genre": "اکشن - هیجان انگیز",
-      "score": "7.2",
-      "yearOfPublication": "2023",
+      "year_score": [
+        {"score": "7.2"},
+        {"year": "2023"}
+      ],
       "country": "آمریکا",
       "director": "Sam Hargrave",
       "actors": "Adam Bessa، Chris Hemsworth، Daniel Bernhardt",
@@ -320,8 +362,10 @@
       "en_name": "Spiderhead",
       "fa_name": "اسپایدرهد",
       "genre": "اکشن - جنایی",
-      "score": "7.7",
-      "yearOfPublication": "2022",
+      "year_score": [
+        {"score": "7.7"},
+        {"year": "2022"}
+      ],
       "country": "آمریکا",
       "director": "Joseph Kosinski",
       "actors": "Angie Milliken، Ashleigh Lawrence، BeBe Bettencourt",
@@ -335,8 +379,10 @@
       "en_name": "Lou",
       "fa_name": "لو",
       "genre": "اکشن - جنایی",
-      "score": "6.0",
-      "yearOfPublication": "2022",
+      "year_score": [
+        {"score": "6.0"},
+        {"year": "2022"}
+      ],
       "country": "آمریکا",
       "director": "Anna Foerster",
       "actors": "Allison Janney، Andres Collantes، Daniel Bernhardt",
@@ -350,8 +396,10 @@
       "en_name": "Emily the Criminal",
       "fa_name": "امیلی جنایتکار",
       "genre": "درام - جنایی",
-      "score": "6.9",
-      "yearOfPublication": "2022",
+      "year_score": [
+        {"score": "6.9"},
+        {"year": "2022"}
+      ],
       "country": "آمریکا",
       "director": "John Patton Ford",
       "actors": "Amje Elharden، Aubrey Plaza، Ben Rodgers",
@@ -365,8 +413,10 @@
       "en_name": "Black Warrant",
       "fa_name": "حکم سیاه",
       "genre": "اکشن - هیجان انگیز",
-      "score": "5.9",
-      "yearOfPublication": "2022",
+      "year_score": [
+        {"score": "5.9"},
+        {"year": "2022"}
+      ],
       "country": "آمریکا",
       "director": "Tibor Takács",
       "actors": "Akram Basuni، Cam Gigandet، Carissa Bussey",
