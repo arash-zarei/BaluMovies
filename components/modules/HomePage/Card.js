@@ -37,17 +37,17 @@ const Card = ({ data }) => {
       })
       .catch(() => {
         setIsExist(true)
-        // toast.warn("در لیست پخش موجود است", {
-        //   position: "top-center",
-        //   autoClose: 3000,
-        //   hideProgressBar: false,
-        //   closeOnClick: true,
-        //   pauseOnHover: true,
-        //   draggable: true,
-        //   progress: undefined,
-        //   theme: "dark",
-        // });
-      });
+        toast.success('اضافه شد', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
+      })
   };
 
   return (
