@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-const CategoriesPage = () => {
+// Components
+import Card from "../modules/HomePage/Card";
+
+const CategoriesPage = ({ data }) => {
   const [query, setQuery] = useState({ score: "", year: "" });
+
+  useEffect(() => {
+    const { score, year } = route.query;
+    if (query.score !== score || query.year !== year) {
+      setQuery({ score, year });
+    }
+  }, []);
+
+  const route = useRouter();
 
   const selectHandler = (e) => {
     setQuery({ ...query, [e.target.name]: e.target.value });
   };
-
-  const route = useRouter();
 
   const searchHandler = () => {
     route.push({
@@ -22,6 +32,7 @@ const CategoriesPage = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 mt-7">
         <select
           onChange={selectHandler}
+          value={query.score}
           name="score"
           id=""
           className="bg-dark text-primary rounded-md outline-none p-1 cursor-pointer"
@@ -34,6 +45,7 @@ const CategoriesPage = () => {
 
         <select
           onChange={selectHandler}
+          value={query.year}
           name="year"
           id=""
           className="bg-dark text-primary rounded-md outline-none p-1 cursor-pointer"
@@ -55,14 +67,17 @@ const CategoriesPage = () => {
           جستجو
         </button>
       </div>
-
-      <div className="w-full">
-        <img
-          src="/images/search.svg"
-          alt="search"
-          className="w-80 mt-24 mx-auto opacity-80"
-        />
-      </div>
+      {data.length ? (
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3 my-6">
+          {data.map((movie) => (
+            <Card key={movie.id} data={movie} />
+          ))}
+        </div>
+      ) : (
+        <div className="mt-10 w-full">
+          <img src="/images/search.svg" alt="search" className="w-72 mx-auto" />
+        </div>
+      )}
     </div>
   );
 };
