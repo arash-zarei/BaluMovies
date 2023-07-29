@@ -43,7 +43,7 @@ const Navbar = ({ navbarHandler }) => {
   }, [router.pathname])
 
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-black min-h-screen">
       {/* heder Navbar */}
       <div className="flex justify-between items-center px-4 bg-black xl:sticky xl:top-0 static">
         <Link href="/" className="h3 text-white p-4" onClick={()=> navbarHandler()}>
