@@ -1,4 +1,6 @@
 import React from "react";
+import { useRouter } from "next/router"
+
 
 // Icons
 import * as Unicons from "@iconscout/react-unicons";
@@ -10,7 +12,9 @@ import "react-toastify/dist/ReactToastify.css";
 const CardWatchList = ({ data }) => {
   const { id, fa_name, time } = data;
 
-  const deleteHandler = () => {
+  const route = useRouter()
+
+  const deleteHandler = (id) => {
     fetch(`http://localhost:3030/watch_list/${id.toString()}`,{
         method: "DELETE"
     }).then(() => {
@@ -24,6 +28,10 @@ const CardWatchList = ({ data }) => {
             progress: undefined,
             theme: "dark",
             });
+            route.push({
+              pathname: "/watchlist",
+              query: `deleted-${id}`
+            })
     })
   };
 
@@ -43,7 +51,7 @@ const CardWatchList = ({ data }) => {
             پخش
           </button>
           <span
-            onClick={deleteHandler}
+            onClick={()=> deleteHandler(id)}
             className="p-1 rounded-md bg-red-600 text-black cursor-pointer"
           >
             <Unicons.UilTrash />

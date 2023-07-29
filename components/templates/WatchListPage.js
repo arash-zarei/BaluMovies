@@ -4,13 +4,12 @@ import React from "react";
 import CardWatchList from "../modules/WatchListPage/CardWatchList";
 
 const WatchListPage = ({ data }) => {
-
   return (
     <div className="w-full px-4">
       {data.length ? (
         <div className="w-full px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-24">
           {data.map((movie) => (
-             <CardWatchList key={movie.id} data={movie} />
+            <CardWatchList key={movie.id} data={movie} />
           ))}
         </div>
       ) : (
