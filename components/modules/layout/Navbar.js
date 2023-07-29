@@ -10,6 +10,7 @@ const Navbar = ({ navbarHandler }) => {
   const [isActiveHome, setIsActiveHome] = useState(true)
   const [isActiveCategories, setIsActiveCategories] = useState(true)
   const [isActiveMovies, setIsActiveMovies] = useState(true)
+  const [isActiveWatchList, setIsActiveWatchList] = useState(true)
 
   const router = useRouter()
 
@@ -31,6 +32,12 @@ const Navbar = ({ navbarHandler }) => {
       setIsActiveMovies(true)
     }else{
       setIsActiveMovies(false)
+    }
+    // WatchList
+    if(router.pathname === "/watchlist"){
+      setIsActiveWatchList(true)
+    }else{
+      setIsActiveWatchList(false)
     }
 
   }, [router.pathname])
@@ -72,7 +79,7 @@ const Navbar = ({ navbarHandler }) => {
             فیلم ها</Link>
           </li>
           <li className="listLi" onClick={()=> navbarHandler()}>
-            <Link href="/watchlist" className={`w-full listLi py-0 ${isActiveMovies && "activeLi"}`}>
+            <Link href="/watchlist" className={`w-full listLi py-0 ${isActiveWatchList && "activeLi"}`}>
             <Unicons.UilEye />
             لیست تماشا
             </Link>
