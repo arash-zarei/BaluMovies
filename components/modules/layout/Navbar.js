@@ -39,7 +39,7 @@ const Navbar = ({ navbarHandler }) => {
     <div className="w-full bg-black">
       {/* heder Navbar */}
       <div className="flex justify-between items-center px-4 bg-black xl:sticky xl:top-0 static">
-        <Link href="/" className="h3 text-white p-4">
+        <Link href="/" className="h3 text-white p-4" onClick={()=> navbarHandler()}>
           <span className="text-primary">بالو</span>مووی
           <br />
           <span className="text-primary">Balu</span>Movie
@@ -54,26 +54,28 @@ const Navbar = ({ navbarHandler }) => {
       <div className="pr-4">
         <ul>
           <p className="text-gray-500">منو</p>
-          <li className="listLi">
+          <li className="listLi" onClick={()=> navbarHandler()}>
             <Link href="/" className={`w-full listLi py-0 ${isActiveHome && "activeLi"}`}>
               <Unicons.UilEstate />
               خانه
             </Link>
           </li>
-          <li className="listLi">
+          <li className="listLi" onClick={()=> navbarHandler()}>
             <Link href="/categories" className={`w-full listLi py-0 ${isActiveCategories && "activeLi"}`}>
               <Unicons.UilFilter />
               یافتن
             </Link>
           </li>
-          <li className="listLi">
+          <li className="listLi" onClick={()=> navbarHandler()}>
             <Link href="/movies" className={`w-full listLi py-0 ${isActiveMovies && "activeLi"}`}>
             <Unicons.UilClapperBoard />
             فیلم ها</Link>
           </li>
-          <li className="listLi">
+          <li className="listLi" onClick={()=> navbarHandler()}>
+            <Link href="/watchlist" className={`w-full listLi py-0 ${isActiveMovies && "activeLi"}`}>
             <Unicons.UilEye />
             لیست تماشا
+            </Link>
           </li>
         </ul>
         <ul>
