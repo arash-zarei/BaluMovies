@@ -6,8 +6,12 @@
       "fa_name": "چکش",
       "genre": "درام - زندگی نامه",
       "year_score": [
-        {"score": "7.1"},
-        {"year": "2023"}
+        {
+          "score": "7.1"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Jeff Beesley",
@@ -23,8 +27,12 @@
       "fa_name": "کانال",
       "genre": "اکشن - هیجان انگیز",
       "year_score": [
-        {"score": "5.8"},
-        {"year": "2023"}
+        {
+          "score": "5.8"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "William Kaufman",
@@ -40,8 +48,12 @@
       "fa_name": "تایرون را شبیه سازی کردند",
       "genre": "اکشن - کمدی",
       "year_score": [
-        {"score": "6.7"},
-        {"year": "2023"}
+        {
+          "score": "6.7"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Juel Taylor",
@@ -57,8 +69,12 @@
       "fa_name": "باربی",
       "genre": "کمدی - ماجراجویی",
       "year_score": [
-        {"score": "7.6"},
-        {"year": "2023"}
+        {
+          "score": "7.6"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Greta Gerwig",
@@ -74,8 +90,12 @@
       "fa_name": "اوپنهایمر",
       "genre": "تاریخی - درام",
       "year_score": [
-        {"score": "8.8"},
-        {"year": "2023"}
+        {
+          "score": "8.8"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Christopher Nolan",
@@ -91,8 +111,12 @@
       "fa_name": "گلوله خدا",
       "genre": "ترسناک - جنایی",
       "year_score": [
-        {"score": "6.0"},
-        {"year": "2023"}
+        {
+          "score": "6.0"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Nick Cassavetes",
@@ -108,8 +132,12 @@
       "fa_name": "انگاشته",
       "genre": "اکشن - علمی تخیلی",
       "year_score": [
-        {"score": "7.3"},
-        {"year": "2020"}
+        {
+          "score": "7.3"
+        },
+        {
+          "year": "2020"
+        }
       ],
       "country": "انگلستان",
       "director": "Christopher Nolan",
@@ -125,8 +153,12 @@
       "fa_name": "تلقین",
       "genre": "اکشن - علمی تخیلی",
       "year_score": [
-        {"score": "8.8"},
-        {"year": "2010"}
+        {
+          "score": "8.8"
+        },
+        {
+          "year": "2010"
+        }
       ],
       "country": "انگلستان",
       "director": "Christopher Nolan",
@@ -142,8 +174,12 @@
       "fa_name": "میان ستاره ای ",
       "genre": "درام - علمی تخیلی",
       "year_score": [
-        {"score": "8.6"},
-        {"year": "2014"}
+        {
+          "score": "8.6"
+        },
+        {
+          "year": "2014"
+        }
       ],
       "country": "کانادا",
       "director": "Christopher Nolan",
@@ -159,8 +195,12 @@
       "fa_name": "دانکرک",
       "genre": "اکشن - تاریخی",
       "year_score": [
-        {"score": "7.8"},
-        {"year": "2017"}
+        {
+          "score": "7.8"
+        },
+        {
+          "year": "2017"
+        }
       ],
       "country": "فرانسه",
       "director": "Christopher Nolan",
@@ -176,8 +216,12 @@
       "fa_name": "ماموریت غیر ممکن 7",
       "genre": "اکشن - ماجراجویی",
       "year_score": [
-        {"score": "8.1"},
-        {"year": "2023"}
+        {
+          "score": "8.1"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Christopher McQuarrie",
@@ -193,8 +237,12 @@
       "fa_name": "یاتیسای",
       "genre": "اکشن - تاریخی",
       "year_score": [
-        {"score": "7.9"},
-        {"year": "2023"}
+        {
+          "score": "7.9"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "هند",
       "director": "Dharani Rajendran",
@@ -210,8 +258,12 @@
       "fa_name": "فلش",
       "genre": "اکشن - فانتزی",
       "year_score": [
-        {"score": "8.7"},
-        {"year": "2023"}
+        {
+          "score": "8.7"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Andy Muschietti",
@@ -227,8 +279,12 @@
       "fa_name": "هیپنوتیزم شده",
       "genre": "اکشن - راز آلود",
       "year_score": [
-        {"score": "5.6"},
-        {"year": "2023"}
+        {
+          "score": "5.6"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Robert Rodriguez",
@@ -244,8 +300,12 @@
       "fa_name": "آخرین دوئل",
       "genre": "اکشن - تاریخی",
       "year_score": [
-        {"score": "7.4"},
-        {"year": "2021"}
+        {
+          "score": "7.4"
+        },
+        {
+          "year": "2021"
+        }
       ],
       "country": "انگلستان",
       "director": "Ridley Scott",
@@ -261,8 +321,12 @@
       "fa_name": "مرد عنکبوتی راهی به خانه نیست",
       "genre": "اکشن - فانتزی",
       "year_score": [
-        {"score": "8.3"},
-        {"year": "2021"}
+        {
+          "score": "8.3"
+        },
+        {
+          "year": "2021"
+        }
       ],
       "country": "آمریکا",
       "director": "Jon Watts",
@@ -278,8 +342,12 @@
       "fa_name": "ثور 4 عشق و تندر",
       "genre": "اکشن - فانتزی",
       "year_score": [
-        {"score": "7.8"},
-        {"year": "2022"}
+        {
+          "score": "7.8"
+        },
+        {
+          "year": "2022"
+        }
       ],
       "country": "استرالیا",
       "director": "Taika Waititi",
@@ -295,8 +363,12 @@
       "fa_name": "مرد مورچه ای و زنبورک کوانتومانیا",
       "genre": "اکشن - ماجراجویی ",
       "year_score": [
-        {"score": "6.4"},
-        {"year": "2023"}
+        {
+          "score": "6.4"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "استرالیا",
       "director": "Peyton Reed",
@@ -312,8 +384,12 @@
       "fa_name": "پلنگ سیاه 2 واکاندا برای همیشه",
       "genre": "اکشن - درام ",
       "year_score": [
-        {"score": "7.2"},
-        {"year": "2022"}
+        {
+          "score": "7.2"
+        },
+        {
+          "year": "2022"
+        }
       ],
       "country": "آمریکا",
       "director": "Ryan Coogler",
@@ -329,8 +405,12 @@
       "fa_name": "فست ایکس (سریع و خشن 10)",
       "genre": "اکشن - جنایی ",
       "year_score": [
-        {"score": "7.7"},
-        {"year": "2023"}
+        {
+          "score": "7.7"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Louis Leterrier",
@@ -346,8 +426,12 @@
       "fa_name": "استخراج 2",
       "genre": "اکشن - هیجان انگیز",
       "year_score": [
-        {"score": "7.2"},
-        {"year": "2023"}
+        {
+          "score": "7.2"
+        },
+        {
+          "year": "2023"
+        }
       ],
       "country": "آمریکا",
       "director": "Sam Hargrave",
@@ -363,8 +447,12 @@
       "fa_name": "اسپایدرهد",
       "genre": "اکشن - جنایی",
       "year_score": [
-        {"score": "7.7"},
-        {"year": "2022"}
+        {
+          "score": "7.7"
+        },
+        {
+          "year": "2022"
+        }
       ],
       "country": "آمریکا",
       "director": "Joseph Kosinski",
@@ -380,8 +468,12 @@
       "fa_name": "لو",
       "genre": "اکشن - جنایی",
       "year_score": [
-        {"score": "6.0"},
-        {"year": "2022"}
+        {
+          "score": "6.0"
+        },
+        {
+          "year": "2022"
+        }
       ],
       "country": "آمریکا",
       "director": "Anna Foerster",
@@ -397,8 +489,12 @@
       "fa_name": "امیلی جنایتکار",
       "genre": "درام - جنایی",
       "year_score": [
-        {"score": "6.9"},
-        {"year": "2022"}
+        {
+          "score": "6.9"
+        },
+        {
+          "year": "2022"
+        }
       ],
       "country": "آمریکا",
       "director": "John Patton Ford",
@@ -414,8 +510,12 @@
       "fa_name": "حکم سیاه",
       "genre": "اکشن - هیجان انگیز",
       "year_score": [
-        {"score": "5.9"},
-        {"year": "2022"}
+        {
+          "score": "5.9"
+        },
+        {
+          "year": "2022"
+        }
       ],
       "country": "آمریکا",
       "director": "Tibor Takács",
@@ -425,5 +525,6 @@
       "description": "فیلم Black Warrant محصول کشور آمریکا و در ژانر اکشن ، هیجان انگیز می‌باشد و به کارگردانی Tibor Takács در سال 2022 ساخته شده است. در فیلم حکم سیاه بازیگرانی چون Akram Basuni، Cam Gigandet، Carissa Bussey، Carlos Aylagas، Hani Al Naimi، Helena Haro، Hugo Medina، Jeff Fahey، Joe Chacon، Jonathan Avigdori و... به ایفای نقش پرداخته اند.",
       "id": 25
     }
-  ]
+  ],
+  "watch_list": []
 }
