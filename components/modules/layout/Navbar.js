@@ -108,10 +108,6 @@ const Navbar = ({ navbarHandler }) => {
             دانلودها
           </li>
           <li className="listLi">
-            <Unicons.UilHeart />
-            لیست پخش
-          </li>
-          <li className="listLi">
             <Unicons.UilCheck />
             تکمیل شده
           </li>
