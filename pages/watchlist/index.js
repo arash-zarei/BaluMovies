@@ -8,7 +8,7 @@ const WatchList = ({ watchlist }) => {
 export default WatchList;
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3030/watch_list");
+  const res = await fetch("https://balu-movies-api.vercel.app/watch_list");
   const data = await res.json();
 
   return {

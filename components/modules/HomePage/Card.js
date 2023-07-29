@@ -14,7 +14,7 @@ const Card = ({ data }) => {
   const { en_name, fa_name, genre, year_score, id } = data;
 
   const addHandler = () => {
-    fetch("http://localhost:3030/watch_list", {
+    fetch("https://balu-movies-api.vercel.app/watch_list", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

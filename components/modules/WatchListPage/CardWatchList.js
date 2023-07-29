@@ -15,7 +15,7 @@ const CardWatchList = ({ data }) => {
   const route = useRouter()
 
   const deleteHandler = (id) => {
-    fetch(`http://localhost:3030/watch_list/${id.toString()}`,{
+    fetch(`https://balu-movies-api.vercel.app/watch_list/${id.toString()}`,{
         method: "DELETE"
     }).then(() => {
         toast.error('حذف شد', {

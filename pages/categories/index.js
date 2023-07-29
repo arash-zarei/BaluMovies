@@ -11,7 +11,7 @@ export async function getServerSideProps(context) {
   const {
     query: { score, year },
   } = context;
-  const res = await fetch("http://localhost:3030/movies");
+  const res = await fetch("https://balu-movies-api.vercel.app/movies");
   const data = await res.json();
 
   const FiltredData = data.filter((movie) => {
