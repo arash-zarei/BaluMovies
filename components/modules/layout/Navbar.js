@@ -9,24 +9,30 @@ const Navbar = ({ navbarHandler }) => {
 
   const [isActiveHome, setIsActiveHome] = useState(true)
   const [isActiveCategories, setIsActiveCategories] = useState(true)
+  const [isActiveMovies, setIsActiveMovies] = useState(true)
 
   const router = useRouter()
 
   useEffect(() => {
+    // Home
     if(router.pathname === "/"){
       setIsActiveHome(true)
     } else{
       setIsActiveHome(false)
     }
-
+    // Category
     if(router.pathname === "/categories"){
       setIsActiveCategories(true)
     }else{
       setIsActiveCategories(false)
     }
+    // Movie
+    if(router.pathname === "/movies"){
+      setIsActiveMovies(true)
+    }else{
+      setIsActiveMovies(false)
+    }
 
-    console.log("home:" + isActiveHome);
-    console.log("categories:" + isActiveCategories);
   }, [router.pathname])
 
   return (
@@ -61,16 +67,21 @@ const Navbar = ({ navbarHandler }) => {
             </Link>
           </li>
           <li className="listLi">
+            <Link href="/movies" className={`w-full listLi py-0 ${isActiveMovies && "activeLi"}`}>
             <Unicons.UilClapperBoard />
-            لیست تماشا
+            فیلم ها</Link>
           </li>
           <li className="listLi">
-            <Unicons.UilCheckCircle />
-            سلبریتی
+            <Unicons.UilEye />
+            لیست تماشا
           </li>
         </ul>
         <ul>
           <p className="text-gray-500 mb-4">کتاب خانه</p>
+          <li className="listLi">
+            <Unicons.UilCheckCircle />
+            سلبریتی
+          </li>
           <li className="listLi">
             <Unicons.UilClock />
             اخیر
