@@ -9,8 +9,7 @@ const MoviePage = ({ data }) => {
     fa_name,
     fullname,
     genre,
-    score,
-    yearOfPublication,
+    year_score,
     country,
     director,
     actors,
@@ -34,13 +33,13 @@ const MoviePage = ({ data }) => {
               <Unicons.UilSmile /> <span className="text-primary">ژانر :</span> {genre}
             </li>
             <li className="listLi listDatils">
-              <Unicons.UilStar /> <span className="text-primary">امتیاز :</span> {score} <img src="/images/imdb.png" alt="imdb" className="w-7" />
+              <Unicons.UilStar /> <span className="text-primary">امتیاز :</span> {year_score[0].score} <img src="/images/imdb.png" alt="imdb" className="w-7" />
             </li>
             <li className="listLi listDatils">
               <Unicons.UilClock /> <span className="text-primary">زمان :</span> {time} دقیقه 
             </li>
             <li className="listLi listDatils">
-              <Unicons.UilCalender /> <span className="text-primary">سال انتشار :</span> {yearOfPublication}
+              <Unicons.UilCalender /> <span className="text-primary">سال انتشار :</span> {year_score[1].year}
             </li>
             <li className="listLi listDatils">
               <Unicons.UilFootball /> <span className="text-primary">محصول کشور :</span> {country}
