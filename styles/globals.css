@@ -7,11 +7,6 @@
   src: url("/font/Mikhak.ttf");
 }
 
-html,
-body {
-  direction: rtl;
-}
-
 @layer base {
   * {
     @apply font-primary;
