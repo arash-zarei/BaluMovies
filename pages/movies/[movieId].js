@@ -4,6 +4,7 @@ import React from 'react';
 // Components
 import MoviePage from '../../components/templates/MoviePage';
 import Loading from '../../components/modules/MoviePage/Loading';
+import Head from 'next/head';
 
 const MovieDetails = ({ movie }) => {
 
@@ -13,7 +14,16 @@ const MovieDetails = ({ movie }) => {
         return <Loading />
     }
 
-    return <MoviePage data={movie} />
+    return (
+        
+        <>
+        <Head>
+            <title>{movie.fa_name}</title>
+            <meta name='description' content={movie.synopsis} />
+        </Head>
+        <MoviePage data={movie} />
+        </>
+    )
 };
 
 export default MovieDetails;
