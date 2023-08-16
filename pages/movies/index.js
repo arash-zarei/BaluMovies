@@ -1,5 +1,5 @@
 // Components
-import MoviesPage from "../../components/templates/MoviesPage";
+import MoviesPage from "@/templates/MoviesPage";
 
 const index = ({ movies }) => {
     return <MoviesPage data={movies} />

@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import React from 'react';
+import Head from 'next/head';
 
 // Components
-import MoviePage from '../../components/templates/MoviePage';
-import Loading from '../../components/modules/MoviePage/Loading';
-import Head from 'next/head';
+import MoviePage from '@/templates/MoviePage';
+import Loading from '@/modules/MoviePage/Loading';
 
 const MovieDetails = ({ movie }) => {
 

@@ -1,5 +1,5 @@
 // Components
-import CategoriesPage from "../../components/templates/CategoriesPage";
+import CategoriesPage from "@/templates/CategoriesPage";
 
 const Categories = ({ movie }) => {
   return <CategoriesPage data={movie} />;

@@ -1,5 +1,5 @@
 // Components
-import WatchListPage from "../../components/templates/WatchListPage";
+import WatchListPage from "@/templates/WatchListPage";
 
 const WatchList = ({ watchlist }) => {
   return <WatchListPage data={watchlist} />;
