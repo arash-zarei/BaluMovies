@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image"
 import Link from "next/link";
 
 // Toast
@@ -53,7 +54,7 @@ const Card = ({ data }) => {
   return (
     <div className="rounded-xl mt-8 relative text-white w-fit">
       <ToastContainer />
-      <img src={`/images/${id}.jpg`} alt={fa_name} className="rounded-xl" />
+      <Image src={`/images/${id}.jpg`} width={1175} height={1763} alt={fa_name} className="rounded-xl" />
       <div className="detailsCard">
         <div>
           <p className="text-left">{en_name}</p>
@@ -63,7 +64,7 @@ const Card = ({ data }) => {
           <div className="w-full flex justify-between items-center">
             <p>{genre}</p>
             <div className="flex items-center gap-1">
-              <img src="/images/imdb.png" alt="imdb" className="w-7" />
+              <Image src="/images/imdb.png" width={512} height={512} alt="imdb" className="w-7" />
               <p>{year_score[0].score}</p>
             </div>
           </div>

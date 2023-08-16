@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 // Components
 import Card from "../modules/HomePage/Card";
@@ -75,7 +76,7 @@ const CategoriesPage = ({ data }) => {
         </div>
       ) : (
         <div className="mt-10 w-full">
-          <img src="/images/search.svg" alt="search" className="w-72 mx-auto" />
+          <Image width={512} height={512} src="/images/search.svg" alt="search" className="w-72 mx-auto" />
         </div>
       )}
     </div>

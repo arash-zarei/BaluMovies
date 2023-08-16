@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 // Icons
 import * as Unicons from "@iconscout/react-unicons";
@@ -21,7 +22,9 @@ const MoviePage = ({ data }) => {
   return (
     <div className="w-full mt-8 px-4">
       <div className="w-full flex flex-col md:flex-row gap-3">
-        <img
+        <Image
+        width={1175}
+        height={1763}
           src={`/images/${id}.jpg`}
           alt={fullname}
           className="w-full md:w-80 rounded-lg"

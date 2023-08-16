@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 // // Icons
 import * as Unicons from "@iconscout/react-unicons";
 
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(2);
-  const dotes = useRef(null)
+  const dotes = useRef(null);
   const images = [
     "/images/banner-1.jpg",
     "/images/banner-2.jpg",
@@ -27,16 +28,22 @@ const Slider = () => {
   };
 
   useEffect(() => {
-    const dot =[...dotes.current.children]
+    const dot = [...dotes.current.children];
     for (let i = 0; i < dot.length; i++) {
-      dot[i].classList.remove("bg-primary")
+      dot[i].classList.remove("bg-primary");
     }
-    dot[currentIndex].classList.add("bg-primary")
-  }, [currentIndex])
+    dot[currentIndex].classList.add("bg-primary");
+  }, [currentIndex]);
 
   return (
     <div className="relative w-full lg:w-[85%] mx-auto mt-6">
-      <img src={`${images[currentIndex]}`} alt="image" className="imgSlider" />
+      <Image
+        width={1920}
+        height={1080}
+        src={`${images[currentIndex]}`}
+        alt="image"
+        className="imgSlider"
+      />
       <div className="w-full flex justify-between items-center absolute top-[35%] sm:top-[45%] px-3">
         <span className="sliderBtn" onClick={nextHandler}>
           <Unicons.UilAngleRight />
