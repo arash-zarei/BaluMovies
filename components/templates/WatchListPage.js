@@ -1,7 +1,7 @@
 import React from "react";
 
 // Components
-import CardWatchList from "../modules/WatchListPage/CardWatchList";
+import CardWatchList from "@/modules/WatchListPage/CardWatchList";
 
 const WatchListPage = ({ data }) => {
   return (

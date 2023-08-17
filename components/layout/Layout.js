@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 // Components
-import Header from "../modules/layout/Header";
-import Navbar from "../modules/layout/Navbar";
+import Header from "@/modules/layout/Header";
+import Navbar from "@/modules/layout/Navbar";
 
 const Layout = ({ children }) => {
 

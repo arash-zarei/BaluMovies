@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 
 // Components
-import Card from "../modules/HomePage/Card";
+import Card from "@/modules/HomePage/Card";
 
 const CategoriesPage = ({ data }) => {
   const [query, setQuery] = useState({ score: "", year: "" });

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import Card from '../modules/HomePage/Card'
+import Card from '@/modules/HomePage/Card'
 
 const MoviesPage = ({ data }) => {
     return (

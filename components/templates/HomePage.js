@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 
 // Components
-import Slider from "../modules/HomePage/Slider";
-import Card from "../modules/HomePage/Card";
+import Slider from "@/modules/HomePage/Slider";
+import Card from "@/modules/HomePage/Card";
 
 const HomePage = ({ data }) => {
   return (
