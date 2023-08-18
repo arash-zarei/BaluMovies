@@ -16,7 +16,6 @@ const Card = ({ data }) => {
 
   const addHandler = (id) => {
     axios.post("/api/watchlist", { ...data, existing: true }).then(() => {
-      console.log("added");
       axios.patch(`/api/movies/${id}`, { existing: true }).then((data) => {
         setMovieData(data.data.data);
         toast.success("اضافه شد", {

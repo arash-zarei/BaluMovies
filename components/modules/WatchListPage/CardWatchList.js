@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import axios from "axios";
 
 // Icons
 import * as Unicons from "@iconscout/react-unicons";
@@ -9,28 +10,24 @@ import * as Unicons from "@iconscout/react-unicons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const CardWatchList = ({ data }) => {
+const CardWatchList = ({ data, id }) => {
   const { _id, fa_name, time, img } = data;
 
   const route = useRouter();
 
-  const deleteHandler = (id) => {
-    fetch(`https://balu-movies-api.vercel.app/watch_list/${id.toString()}`, {
-      method: "DELETE",
-    }).then(() => {
-      toast.error("حذف شد", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-      route.push({
-        pathname: "/watchlist",
-        query: `deleted-${_id}`,
+  const deleteHandler = () => {
+    axios.delete(`/api/watchlist/${id}`).then(() => {
+      axios.patch(`/api/movies/${_id}`, { existing: false }).then(() => {
+        toast.error("حذف شد", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
       });
     });
   };
@@ -53,7 +50,7 @@ const CardWatchList = ({ data }) => {
             پخش
           </button>
           <span
-            onClick={() => deleteHandler(_id)}
+            onClick={() => deleteHandler()}
             className="p-1 rounded-md bg-red-600 text-black cursor-pointer"
           >
             <Unicons.UilTrash />
