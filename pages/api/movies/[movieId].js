@@ -18,7 +18,12 @@ const handler = async (req, res) => {
       movie.existing = existing
       movie.save()
       res.status(200).json({status: "success", data: movie})
-    } catch (error) {}
+    } catch (error) {
+        res.status(500).json({
+            status: "failed",
+            message: "Error in retrieving data from database",
+          });
+    }
   }
 };
 
