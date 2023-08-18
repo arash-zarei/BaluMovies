@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import Link from "next/link";
+import axios from "axios";
 
 // Toast
 import { ToastContainer, toast } from "react-toastify";
@@ -10,22 +11,15 @@ import "react-toastify/dist/ReactToastify.css";
 import * as Unicons from "@iconscout/react-unicons";
 
 const Card = ({ data }) => {
-  const [isExist, setIsExist] = useState(false);
+  const [movieData, setMovieData] = useState(data);
+  const { en_name, fa_name, genre, year_score, _id, img, existing } = movieData;
 
-  const { en_name, fa_name, genre, year_score, _id, img } = data;
-
-  const addHandler = () => {
-    fetch("https://balu-movies-api.vercel.app/watch_list", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then(() => {
-        setIsExist(true);
-        toast.success('اضافه شد', {
+  const addHandler = (id) => {
+    axios.post("/api/watchlist", { ...data, existing: true }).then(() => {
+      console.log("added");
+      axios.patch(`/api/movies/${id}`, { existing: true }).then((data) => {
+        setMovieData(data.data.data);
+        toast.success("اضافه شد", {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -34,27 +28,21 @@ const Card = ({ data }) => {
           draggable: true,
           progress: undefined,
           theme: "dark",
-          });
-      })
-      .catch(() => {
-        setIsExist(true)
-        toast.success('اضافه شد', {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-          });
-      })
+        });
+      });
+    });
   };
 
   return (
     <div className="rounded-xl mt-8 relative text-white w-fit">
       <ToastContainer />
-      <Image src={`/images/${img}.jpg`} width={1175} height={1763} alt={fa_name} className="rounded-xl" />
+      <Image
+        src={`/images/${img}.jpg`}
+        width={1175}
+        height={1763}
+        alt={fa_name}
+        className="rounded-xl"
+      />
       <div className="detailsCard">
         <div>
           <p className="text-left">{en_name}</p>
@@ -64,7 +52,13 @@ const Card = ({ data }) => {
           <div className="w-full flex justify-between items-center">
             <p>{genre}</p>
             <div className="flex items-center gap-1">
-              <Image src="/images/imdb.png" width={512} height={512} alt="imdb" className="w-7" />
+              <Image
+                src="/images/imdb.png"
+                width={512}
+                height={512}
+                alt="imdb"
+                className="w-7"
+              />
               <p>{year_score[0].score}</p>
             </div>
           </div>
@@ -77,11 +71,12 @@ const Card = ({ data }) => {
             </Link>
             <button
               onClick={() => addHandler(_id)}
+              disabled={existing}
               className={`p-1 rounded-md ${
-                isExist ? "bg-primary text-black" : "bg-gray-600"
+                existing ? "bg-primary text-black" : "bg-gray-600"
               } cursor-pointer`}
             >
-              {isExist ? <Unicons.UilCheck /> : <Unicons.UilPlus />}
+              {existing ? <Unicons.UilCheck /> : <Unicons.UilPlus />}
             </button>
           </div>
         </div>
