@@ -1,17 +1,26 @@
+import connectDB from "utils/connectDB";
+import WatchList from "models/WatchList";
+
 // Components
 import WatchListPage from "@/templates/WatchListPage";
 
-const WatchList = ({ watchlist }) => {
+const WatchListSSR = ({ watchlist }) => {
   return <WatchListPage data={watchlist} />;
 };
 
-export default WatchList;
+export default WatchListSSR;
 
 export async function getServerSideProps() {
-  const res = await fetch("https://balu-movies-api.vercel.app/watch_list");
-  const data = await res.json();
+  try {
+    await connectDB();
+    const data = await WatchList.find();
 
-  return {
-    props: { watchlist: data },
-  };
+    return {
+      props: { watchlist: JSON.parse(JSON.stringify(data)) },
+    };
+  } catch (error) {
+    return {
+      notFound: true,
+    };
+  }
 }
