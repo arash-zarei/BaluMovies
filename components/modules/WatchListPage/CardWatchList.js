@@ -11,7 +11,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const CardWatchList = ({ data, id }) => {
-  const { _id, fa_name, time, img } = data;
+  const { _id, fa_name, en_name, time, img } = data;
 
   const route = useRouter();
 
@@ -29,6 +29,10 @@ const CardWatchList = ({ data, id }) => {
           theme: "dark",
         });
       });
+      route.push({
+        pathname: "/watchlist",
+        query: `deleted_${en_name}`
+      })
     });
   };
 
