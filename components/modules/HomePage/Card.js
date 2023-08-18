@@ -12,7 +12,7 @@ import * as Unicons from "@iconscout/react-unicons";
 const Card = ({ data }) => {
   const [isExist, setIsExist] = useState(false);
 
-  const { en_name, fa_name, genre, year_score, id } = data;
+  const { en_name, fa_name, genre, year_score, _id, img } = data;
 
   const addHandler = () => {
     fetch("https://balu-movies-api.vercel.app/watch_list", {
@@ -54,7 +54,7 @@ const Card = ({ data }) => {
   return (
     <div className="rounded-xl mt-8 relative text-white w-fit">
       <ToastContainer />
-      <Image src={`/images/${id}.jpg`} width={1175} height={1763} alt={fa_name} className="rounded-xl" />
+      <Image src={`/images/${img}.jpg`} width={1175} height={1763} alt={fa_name} className="rounded-xl" />
       <div className="detailsCard">
         <div>
           <p className="text-left">{en_name}</p>
@@ -70,13 +70,13 @@ const Card = ({ data }) => {
           </div>
           <div className="w-full flex justify-between items-center gap-2">
             <Link
-              href={`movies/${id}`}
+              href={`movies/${_id}`}
               className="w-full py-1 bg-primary hover:bg-yellow-400 text-black text-center rounded-md"
             >
               تماشا
             </Link>
             <button
-              onClick={() => addHandler(id)}
+              onClick={() => addHandler(_id)}
               className={`p-1 rounded-md ${
                 isExist ? "bg-primary text-black" : "bg-gray-600"
               } cursor-pointer`}
