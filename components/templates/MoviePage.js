@@ -6,7 +6,8 @@ import * as Unicons from "@iconscout/react-unicons";
 
 const MoviePage = ({ data }) => {
   const {
-    id,
+    _id,
+    img,
     fa_name,
     fullname,
     genre,
@@ -25,7 +26,7 @@ const MoviePage = ({ data }) => {
         <Image
         width={1175}
         height={1763}
-          src={`/images/${id}.jpg`}
+          src={`/images/${img}.jpg`}
           alt={fullname}
           className="w-full md:w-80 rounded-lg"
         />
