@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",
+    "axios": "^1.4.0",
+    "mongoose": "^7.4.3",
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
