@@ -10,7 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const CardWatchList = ({ data }) => {
-  const { id, fa_name, time } = data;
+  const { _id, fa_name, time, img } = data;
 
   const route = useRouter();
 
@@ -30,7 +30,7 @@ const CardWatchList = ({ data }) => {
       });
       route.push({
         pathname: "/watchlist",
-        query: `deleted-${id}`,
+        query: `deleted-${_id}`,
       });
     });
   };
@@ -41,7 +41,7 @@ const CardWatchList = ({ data }) => {
       <Image
         width={1175}
         height={1763}
-        src={`/images/${id}.jpg`}
+        src={`/images/${img}.jpg`}
         alt={fa_name}
         className="w-full h-full opacity-30 object-cover"
       />
@@ -53,7 +53,7 @@ const CardWatchList = ({ data }) => {
             پخش
           </button>
           <span
-            onClick={() => deleteHandler(id)}
+            onClick={() => deleteHandler(_id)}
             className="p-1 rounded-md bg-red-600 text-black cursor-pointer"
           >
             <Unicons.UilTrash />
